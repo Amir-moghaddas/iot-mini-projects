@@ -1,45 +1,12 @@
-# 🚨 Ultrasonic Security Alarm
+# 🤖 IoT Mini Projects
 
-This project uses an ultrasonic sensor and a buzzer to detect
-any object or person that enters a defined area. When something
-comes closer than 200 cm, the alarm sounds.
+Small IoT projects in MicroPython for ESP32 and Raspberry Pi Pico.
 
-**Tested on:** ESP32
+## 📂 Projects
 
-## 🔧 Components
-- ESP32 DevKit
-- HC-SR04 ultrasonic sensor
-- Buzzer
-
-## 🔌 Wiring
-| Part | Pin |
-|------|-----|
-| TRIG | GPIO 16 |
-| ECHO | GPIO 4 |
-| Buzzer | GPIO 13 |
-
-## ⚙️ How it works
-1. The sensor measures the distance every 0.1 seconds.
-2. If the distance is 200 cm or less, the buzzer sounds.
-3. If not, the buzzer stays off.
-
-## ▶️ Run
-Copy `main.py` to the board and reset it.
-You can also test it in the Wokwi simulator using `diagram.json`.
-
-## 📟 Sample output
-```
-152.4
-151.9
-87.3
-```
-
-## 🚀 Possible improvements
-- Add a door sensor (for example, a magnetic reed switch)
-  to trigger the alarm when the door opens
-- Add a timeout to the echo loop
-- Add an LED or a notification module
-- Add more security modules
+| Project | Board | Description |
+|---------|-------|-------------|
+| [Ultrasonic Security Alarm](esp32/ultrasonic-buzzer) | ESP32 | A buzzer sounds when an object comes closer than 200 cm |
 
 ## 📄 License
 MIT
